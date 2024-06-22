@@ -1,10 +1,10 @@
-import {  NavLink } from "react-router-dom";
-// import useAuth from "../hooks/useAuth";
+import {  Link, NavLink } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 const Navbar = () => {
-    // const { user, logOut } = useAuth()
+    const { user, logOut } = useAuth()
     // const [isOpen, setIsOpen] = useState(false)
 
-    // console.log(user)
+    console.log(user)
 
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -29,7 +29,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex gap-2 items-center">
-                    <img className="w-[40px] h-[40px]" src="https://i.ibb.co/nD0DmCd/trophy-cup-champion-trophy-free-png.png" alt="" />
+                    <img className="w-[40px] h-[40px]" src="https://i.ibb.co/d5L1KtN/1-f4b3ae41-1188-43f2-b1b7-73a573e886b3.jpg" alt="" />
                     <a className="btn btn-ghost lg:text-[20px] text-[14px] font-extrabold "><span className=" text-green-500  ">Jute & Wooden</span> Crafts Store  </a>
                 </div>
 
@@ -39,7 +39,7 @@ const Navbar = () => {
                     {navLinks}
                 </ul>
             </div>
-            {/* <div className="navbar-end ">
+            <div className="navbar-end ">
                 {
                     user ? <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
@@ -71,7 +71,7 @@ const Navbar = () => {
                     </div> : <li><NavLink to='/logIn'>LogIn</NavLink></li>
 
                 }
-            </div> */}
+            </div>
         </div>
     );
 };
