@@ -3,7 +3,7 @@ import Banner from "../../components/home/Banner";
 const Home = () => {
     return (
         <div>
-            <Banner/>
+           das
         </div>
     );
 };
