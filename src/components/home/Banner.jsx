@@ -20,27 +20,29 @@ const Banner = () => {
         <Swiper
             pagination={pagination}
             modules={[Pagination]}
-            className="mySwiper my-[10px]"
+            className="mySwiper my-[10px] rounded-xl"
         >
             <SwiperSlide>
                 <img className='w-full h-[550px]'
                     src="https://i.ibb.co/CvDJgLh/colored-minimalis-living-room-design-simple-fictional-sophisticated-product-design-furniture-design.jpg" alt="" />
             </SwiperSlide>
-            <SwiperSlide>
-                <img className='w-full h-[550px]'
-                    src="https://i.ibb.co/C6PSVBn/handcrafted-wooden-decorative-vase-23-2151003070.jpg" alt="" />
-            </SwiperSlide>
+
             <SwiperSlide>
                 <img className='w-full h-[550px]'
                     src="https://i.ibb.co/0JGMjxp/maxresdefault.jpg" alt="" />
             </SwiperSlide>
+
             <SwiperSlide>
                 <img className='w-full h-[550px]'
                     src="https://i.ibb.co/0BrXDCx/maxresdefault.jpg" alt="" />
             </SwiperSlide>
-           
-           
-           
+
+            <SwiperSlide>
+                <img className='w-full h-[550px]'
+                    src="https://i.ibb.co/C6PSVBn/handcrafted-wooden-decorative-vase-23-2151003070.jpg" alt="" />
+            </SwiperSlide>
+            
+            
         </Swiper>
     );
 };
