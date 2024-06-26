@@ -9,9 +9,9 @@ const Home = () => {
     return (
         <div>
             <Banner />
-            <div className="text-center mt-[100px] mb-[20px]">
-                <h2 className="text-[38px] text-black font-bold">OFFER PRODUCTS</h2>
-                <p>Choice your offer product.Those product is unique.</p>
+            <div className="text-center mt-[100px] mb-[20px] max-w-[1280] mx-auto px-[10px]">
+                <h2 className="lg:text-[38px] text-[28px] text-[#404040] font-extrabold">Wooden & Jute Crafts</h2>
+                <p className="text-[16px]">Choice your Wooden or Jute product.Every product is for yours.</p>
               
             </div>
             <OfferProducts />

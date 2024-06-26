@@ -1,7 +1,7 @@
 
 const OfferProducts = () => {
     return (
-        <div className="relative w-full flex gap-4 py-6 overflow-x-auto">
+        <div className="max-w-[1280px] mx-auto relative w-full flex gap-4 py-6 overflow-x-auto">
 
 
 

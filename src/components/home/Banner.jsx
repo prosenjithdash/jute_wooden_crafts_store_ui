@@ -20,25 +20,38 @@ const Banner = () => {
         <Swiper
             pagination={pagination}
             modules={[Pagination]}
-            className="mySwiper my-[10px] rounded-xl"
+            className="mySwiper my-[10px] "
         >
+            
+            
+{/* 
             <SwiperSlide>
                 <img className='w-full h-[700px]'
+                    src="https://i.ibb.co/rd6Yhhz/images-q-tbn-ANd9-Gc-R3q-A9-LP-VM9ch-JDn-Gj8-Grlu12io-XCIf-hr2-Q-s.jpg" alt="" />
+            </SwiperSlide> */}
+
+            <SwiperSlide>
+                <img className='w-full lg:h-[700px] h-[350px]'
+                    src="https://i.ibb.co/2WzB2C5/c2nj-DNM95n-Lxv-CYf8o4ngi.jpg" alt="" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <img className='w-full lg:h-[700px] h-[350px]'
                     src="https://i.ibb.co/CvDJgLh/colored-minimalis-living-room-design-simple-fictional-sophisticated-product-design-furniture-design.jpg" alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
-                <img className='w-full h-[700px]'
+                <img className='w-full lg:h-[700px] h-[350px]'
                     src="https://i.ibb.co/0JGMjxp/maxresdefault.jpg" alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
-                <img className='w-full h-[700px]'
+                <img className='w-full lg:h-[700px] h-[350px]'
                     src="https://i.ibb.co/0BrXDCx/maxresdefault.jpg" alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
-                <img className='w-full h-[700px]'
+                <img className='w-full lg:h-[700px] h-[350px]'
                     src="https://i.ibb.co/C6PSVBn/handcrafted-wooden-decorative-vase-23-2151003070.jpg" alt="" />
             </SwiperSlide>
             

@@ -1,10 +1,11 @@
 
 const Offer = () => {
     return (
-        <div className=" p-6 my-[50px] py-[90px]  bg-gray-700 text-gray-50">
+       
+        <div className=" p-6 my-[50px] lg:py-[90px]  bg-[#404040] text-gray-50">
             <div className="container mx-auto">
                 <div className="flex flex-col lg:flex-row items-center justify-between">
-                    <h2 className="text-center text-6xl tracking-tighter font-bold">Up to
+                    <h2 className="text-center lg:text-6xl text-[40px] tracking-tighter font-bold">Up to
                         <br className="sm:hidden" /> 50% Off
                     </h2>
                     <div className="space-x-2 text-center py-2 lg:py-0">
