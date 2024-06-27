@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Error = () => {
     return (
         <section className=" h-screen bg-[url('https://i.ibb.co/h7zb56d/seamless-fabric-jute-texture-pattern-closeup-sackcloth-blank-textured-textile-background-for-design.jpg')] flex items-center h-full p-16 dark:bg-gray-50 dark:text-gray-800">
-            <div className="bg-white rounded-t-[300px] text-center w-full">
+            <div className="bg-white rounded-t-[300px] text-center rounded-b-[300px] w-full">
                 <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
                     <div className="max-w-md text-center text-yellow-600">
                         <h2 className="mb-8 font-extrabold text-9xl ">
