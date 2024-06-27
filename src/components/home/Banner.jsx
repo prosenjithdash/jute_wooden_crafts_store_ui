@@ -20,7 +20,7 @@ const Banner = () => {
         <Swiper
             pagination={pagination}
             modules={[Pagination]}
-            className="mySwiper my-[10px] "
+            className="mySwiper my-[2px] z-50"
         >
             
             

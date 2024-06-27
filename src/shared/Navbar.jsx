@@ -17,8 +17,8 @@ const Navbar = () => {
 
     </>
     return (
-        <div className="navbar  mt-[50px] max-w-[1280px] mx-auto ">
-            <div className="navbar-start">
+        <div className="navbar  mt-[50px] max-w-[1280px] mx-auto z-50 relative">
+            <div className="navbar-start ">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -28,13 +28,13 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <div className="flex gap-2 items-center">
+                <div className="flex items-center">
                     <img className="w-[40px] h-[40px]" src="https://i.ibb.co/d5L1KtN/1-f4b3ae41-1188-43f2-b1b7-73a573e886b3.jpg" alt="" />
-                    <a className="btn btn-ghost lg:text-[20px] text-[14px] font-extrabold "><span className=" text-[#404040]  ">Jute & Wooden</span><span className="text-yellow-600"> Crafts Store</span>  </a>
+                    <a className="btn btn-ghost lg:text-[23px] text-[12px] font-extrabold "><span className=" text-[#404040]  ">Jute & Wooden</span><span className="text-yellow-700"> Crafts Store</span>  </a>
                 </div>
 
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-center hidden lg:flex z-10">
                 <ul className="menu menu-horizontal px-1">
                     {navLinks}
                 </ul>
@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className="navbar-end ">
                 {
                     user ? <div className="dropdown dropdown-end">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar ">
                             <div className="w-10 rounded-full">
                            
                                 <img

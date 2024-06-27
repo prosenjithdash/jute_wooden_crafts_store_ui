@@ -2,7 +2,7 @@
 const Offer = () => {
     return (
        
-        <div className=" p-6 my-[50px] lg:py-[90px]  bg-[#404040] text-gray-50">
+        <div className=" p-6 my-[50px] lg:py-[120px]  bg-[#404040] text-gray-50">
             <div className="container mx-auto">
                 <div className="flex flex-col lg:flex-row items-center justify-between">
                     <h2 className="text-center lg:text-6xl text-[40px] tracking-tighter font-bold">Up to
@@ -12,7 +12,7 @@ const Offer = () => {
                         <span>Plus free shipping! Use code:</span>
                         <span className="font-bold text-lg">MAMBA</span>
                     </div>
-                    <a href="#" rel="noreferrer noopener" className="px-5 mt-4 lg:mt-0 py-3 rounded-md border block dark:bg-gray-900 dark:text-gray-50 dark:border-gray-600">Shop Now</a>
+                    <a href="#" rel="noreferrer noopener" className="px-6 mt-4 lg:mt-0 py-5 rounded-md  block dark:bg-gray-900 dark:text-gray-50 dark:border-gray-600 bg-yellow-700">Shop Now</a>
                 </div>
             </div>
         </div>
