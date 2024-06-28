@@ -6,7 +6,6 @@ const Crafts = () => {
     console.log('All crafts:',allCraft)
     return (
         <div className="max-w-[1280px] mx-auto">
-            <p>Crafts: {allCraft?.length}</p>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-[24px]">
                 {

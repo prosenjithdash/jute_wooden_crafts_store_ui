@@ -33,6 +33,13 @@ const CraftCard = ({ craft }) => {
                     </button>
                 </div>
                 <img src={image} alt="" className="object-cover object-center w-full h-72 dark:bg-gray-500" />
+
+                <div className="space-y-2 p-[20px]">
+                    <a rel="noopener noreferrer" href="#" className="block">
+                        <h3 className="text-xl font-semibold dark:text-violet-600">{item_name}</h3>
+                    </a>
+                    <p className="leading-snug dark:text-gray-600 ">{shortdescription}</p>
+                </div>
                
             </div>
         </Link>
