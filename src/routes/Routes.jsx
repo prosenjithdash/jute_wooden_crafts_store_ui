@@ -6,6 +6,7 @@ import Home from "../page/Home/Home";
 import LogIn from "../page/LogIn";
 import SignUp from "../page/SignUp";
 import Error from "../page/Error";
+import AllArtCraftItems from "../page/AllArtCraftItems";
 
 const router = createBrowserRouter([
     {
@@ -15,7 +16,21 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element:<Home/>
+                element: <Home />,
+                loader: () => fetch('craftsData.json')
+            },
+            
+            // {
+            //     path: '/craftDetails/:id',
+            //     element: <CraftDetails/>,
+            //     loader: ({ params }) => fetch(`
+            //     https://painting-drawing-server-chi.vercel.app/painting/${params.id}`
+            //     )
+            // },
+            {
+                path: '/allArtCraftItems',
+                element: <AllArtCraftItems />,
+                loader: () => fetch('craftsData.json')
             },
             {
                 path: '/logIn',

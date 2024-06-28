@@ -28,6 +28,7 @@ const Navbar = () => {
 
                     </ul>
                 </div>
+                
                 <div className="flex items-center">
                     <img className="w-[40px] h-[40px]" src="https://i.ibb.co/d5L1KtN/1-f4b3ae41-1188-43f2-b1b7-73a573e886b3.jpg" alt="" />
                     <a className="btn btn-ghost lg:text-[23px] text-[12px] font-extrabold "><span className=" text-[#404040]  ">Jute & Wooden</span><span className="text-yellow-700"> Crafts Store</span>  </a>
