@@ -14,14 +14,14 @@ const CraftCard = ({ craft }) => {
         stockStatus
     } = craft;
     return (
-        <Link to={ `allCraftItems/${_id}`}>
+        <Link to={ `/craftDetails/${_id}`}>
             <div className="rounded-md shadow-md sm:w-96 dark:bg-gray-50 dark:text-gray-800">
                 <div className="flex items-center justify-between p-3">
                     <div className="flex items-center space-x-2">
                         <img src={image} alt="" className="object-cover object-center w-8 h-8 rounded-full shadow-sm dark:bg-gray-500 dark:border-gray-300" />
                         <div className="-space-y-1">
                             <h2 className="text-sm font-semibold leading-none">leroy_jenkins72</h2>
-                            <span className="inline-block text-xs leading-none dark:text-gray-600">Sub Category Name</span>
+                            <span className="inline-block text-xs leading-none dark:text-gray-600">{subcategory_Name}</span>
                         </div>
                     </div>
                     <button title="Open options" type="button">
