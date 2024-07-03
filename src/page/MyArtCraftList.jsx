@@ -1,18 +1,22 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import useAuth from "../hooks/useAuth";
 
 const MyArtCraftList = () => {
 
     const { user } = useAuth() || {}
-    console.log('User email :',user.email)
+    console.log('User email :', user.email)
+    
+    const [item, setItem ] = useState([]);
+
 
     useEffect(() => {
         fetch(`https://jute-wooden-crafts-store-server.vercel.app/myArtCrafts/${user?.email}`)
             .then(res => res.json())
             .then(data => {
-            console.log('My added craft data:',data)
+                console.log('My added craft data:', data)
+                setItem.data
         })
-    },[user])
+    },[user,item])
     return (
         // <div className="overflow-x-auto max-w-[1280px] mx-auto">
         //     <table className="table">
@@ -63,6 +67,15 @@ const MyArtCraftList = () => {
         // </div>
         <div>
             <h2>Test</h2>
+            <div>
+                {
+                    item?.map(craft => (
+                        <div key={craft._id}>
+                            <h2>{craft.item_name}</h2>
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     );
 };
