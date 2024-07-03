@@ -1,0 +1,101 @@
+[
+  {
+    "image": "https://i.ibb.co/khGfDSV/KL-2117-12-1-600x600.jpg",
+    "item_name": "Handcrafted Wooden Dining Table",
+    "subcategory_Name": "Wooden Furniture & Sculptures",
+    "shortdescription": "Exquisite handcrafted dining table made from sustainable wood, perfect for family gatherings.",
+    "price": 799.99,
+    "rating": 4.8,
+    "customization": "Yes",
+    "processing_time": "7-10 business days",
+    "stockStatus": "In stock"
+  },
+  {
+    "image": "https://i.ibb.co/FDmj0Fr/528420-ROZ8-Pw-Dd8-VONklvb.jpg",
+    "item_name": "Vintage Wooden Wall Clock",
+    "subcategory_Name": "Wooden Home Decor",
+    "shortdescription": "Vintage-style wall clock crafted from reclaimed wood, adding charm to any room.",
+    "price": 49.99,
+    "rating": 4.5,
+    "customization": "No",
+    "processing_time": "3-5 business days",
+    "stockStatus": "In stock"
+  },
+  {
+    "image": "https://i.ibb.co/vj2nRhY/51hwp-SSzpa-L-AC.jpg",
+    "item_name": "Set of Wooden Cooking Spatulas",
+    "subcategory_Name": "Wooden Utensils and Kitchenware",
+    "shortdescription": "Set of durable wooden cooking spatulas, ideal for everyday kitchen use.",
+    "price": 14.99,
+    "rating": 4.7,
+    "customization": "No",
+    "processing_time": "2-4 business days",
+    "stockStatus": "In stock"
+  },
+  {
+    "image": "https://i.ibb.co/HhfTjCv/81-AEUh-FEb-ML.jpg",
+    "item_name": "Handwoven Jute Wall Hanging",
+    "subcategory_Name": "Jute Home Decor",
+    "shortdescription": "Handwoven jute wall hanging, adding a natural and textured element to your space.",
+    "price": 39.99,
+    "rating": 4.9,
+    "customization": "Yes",
+    "processing_time": "5-7 business days",
+    "stockStatus": "Made to Order"
+  },
+  {
+    "image": "https://i.ibb.co/L6yLYWK/51-L27a53-IGL-AC.jpg",
+    "item_name": "Set of Jute Coasters",
+    "subcategory_Name": "Jute Kitchenware & Utensils",
+    "shortdescription": "Set of eco-friendly jute coasters, perfect for protecting surfaces in style.",
+    "price": 19.99,
+    "rating": 4.6,
+    "customization": "No",
+    "processing_time": "2-4 business days",
+    "stockStatus": "In stock"
+  },
+  {
+    "image": "https://i.ibb.co/PTrgRNM/417-Loz805s-L-AC-SY580.jpg",
+    "item_name": "Jute and Wooden Bead Necklace",
+    "subcategory_Name": "Jute and Wooden Jewelry",
+    "shortdescription": "Unique necklace made from jute and wooden beads, showcasing natural beauty and craftsmanship.",
+    "price": 29.99,
+    "rating": 4.8,
+    "customization": "Yes",
+    "processing_time": "3-5 business days",
+    "stockStatus": "In stock"
+  },
+  {
+    "image": "https://i.ibb.co/rsM2tCv/images-q-tbn-ANd9-Gc-Svx7-DDbdd-U9-Aahl-NCnz-Jvd-QSCf-Pi-Vsdm8-NCkclw0-If93-XNAZ8a-Ez-Hi7-TQEj8-U3f.jpg",
+    "item_name": "Abstract Wooden Sculpture",
+    "subcategory_Name": "Wooden Furniture & Sculptures",
+    "shortdescription": "Abstract wooden sculpture, hand-carved to bring artistic expression into your living space.",
+    "price": 149.99,
+    "rating": 4.7,
+    "customization": "No",
+    "processing_time": "5-7 business days",
+    "stockStatus": "Made to Order"
+  },
+  {
+    "image": "https://i.ibb.co/jyC634Y/71q-Vh-B7k-FL-AC-UF894-1000-QL80.jpg",
+    "item_name": "Handcrafted Wooden Serving Bowl",
+    "subcategory_Name": "Wooden Utensils and Kitchenware",
+    "shortdescription": "Handcrafted wooden serving bowl, perfect for salads and fruits, adding a touch of natural elegance.",
+    "price": 39.99,
+    "rating": 4.5,
+    "customization": "Yes",
+    "processing_time": "3-5 business days",
+    "stockStatus": "In stock"
+  },
+  {
+    "image": "https://i.ibb.co/JkMrsGy/Respiin-Tall-Pebble-Set.jpg",
+    "item_name": "Jute Storage Basket",
+    "subcategory_Name": "Jute Home Decor",
+    "shortdescription": "Functional jute storage basket, woven to provide versatile storage with eco-friendly materials.",
+    "price": 49.99,
+    "rating": 4.6,
+    "customization": "Yes",
+    "processing_time": "5-7 business days",
+    "stockStatus": "Made to Order"
+  }
+]

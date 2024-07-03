@@ -6,7 +6,8 @@ const MyArtCraftList = () => {
     const { user } = useAuth() || {}
     console.log('User email :', user.email)
     
-    const [item, setItem ] = useState([]);
+    const [item, setItem] = useState([]);
+    console.log('Current item:',item)
 
 
     useEffect(() => {
@@ -16,7 +17,7 @@ const MyArtCraftList = () => {
                 console.log('My added craft data:', data)
                 setItem.data
         })
-    },[user,item])
+    },[user])
     return (
         // <div className="overflow-x-auto max-w-[1280px] mx-auto">
         //     <table className="table">
@@ -69,9 +70,9 @@ const MyArtCraftList = () => {
             <h2>Test</h2>
             <div>
                 {
-                    item?.map(craft => (
-                        <div key={craft._id}>
-                            <h2>{craft.item_name}</h2>
+                    item?.map(c => (
+                        <div key={c._id}>
+                            <h2>{c.item_name}</h2>
                         </div>
                     ))
                 }
