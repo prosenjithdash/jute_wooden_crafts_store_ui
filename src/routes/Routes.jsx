@@ -9,43 +9,55 @@ import Error from "../page/Error";
 import AllArtCraftItems from "../page/AllArtCraftItems";
 import CraftDetails from "../shared/CraftDetails";
 import AddCraftItem from "../page/AddCraftItem";
+import MyArtCraftList from "../page/MyArtCraftList";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout />,
-        errorElement:<Error/>,
+        errorElement: <Error />,
         children: [
+
             {
                 path: '/',
                 element: <Home />,
-                loader: () => fetch('http://localhost:12000/crafts')
+                loader: () => fetch('https://jute-wooden-crafts-store-server.vercel.app/crafts')
             },
-            
+
             {
                 path: '/craftDetails/:id',
-                element: <CraftDetails/>,
+                element: <CraftDetails />,
                 loader: ({ params }) => fetch(`
-                http://localhost:12000/crafts/${params.id}`
+                https://jute-wooden-crafts-store-server.vercel.app/crafts/${params.id}`
                 )
             },
+
             {
                 path: '/addCraftItem',
-                element:<AddCraftItem/>
+                element: <AddCraftItem />
             },
+
             {
                 path: '/allArtCraftItems',
                 element: <AllArtCraftItems />,
-                loader: () => fetch('craftsData.json')
+                loader: () => fetch('https://jute-wooden-crafts-store-server.vercel.app/crafts')
             },
+
+            {
+                path: '/myArtCraftList',
+                element: <MyArtCraftList />
+            },
+
             {
                 path: '/logIn',
                 element: <LogIn />
             },
+
             {
                 path: '/signUp',
                 element: <SignUp />
             }
+
         ]
     },
 ]);

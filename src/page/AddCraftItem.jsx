@@ -11,15 +11,17 @@ const AddCraftItem = () => {
 
         const form = event.target;
 
-        const subcategoryName = form.subcategoryName.value;
+
+
+        const subcategory_Name = form.subcategoryName.value;
         const image = form.image.value;
         const price = form.price.value;
         const rating = form.rating.value;
-        const itemName = form.itemName.value;
-        const shortDescription = form.shortDescription.value;
+        const item_name = form.itemName.value;
+        const shortdescription = form.shortDescription.value;
         const customization = form.customization.value;
         const stockStatus = form.stockStatus.value;
-        const processingTime = form.processingTime.value;
+        const processing_time = form.processingTime.value;
         const creator = {
             name: user?.displayName,
             image: user?.photoURL,
@@ -27,47 +29,56 @@ const AddCraftItem = () => {
         }
 
         const juteWooden = {
-            subcategoryName,
+            item_name,
+            subcategory_Name,
             image,
             price,
             rating,
-            itemName,
-            shortDescription,
+            shortdescription,
             customization,
             stockStatus,
-            processingTime,
+            processing_time,
             creator
         }
 
-        console.log( subcategoryName, image, price, rating, itemName, shortDescription, customization, stockStatus, processingTime, creator)
+        console.log(item_name,
+            subcategory_Name,
+            image,
+            price,
+            rating,
+            shortdescription,
+            customization,
+            stockStatus,
+            processing_time,
+            creator)
 
         console.log(juteWooden)
 
 
 
-        // fetch('http://localhost:12000/crafts', {
-        //     method: 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(juteWooden)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-        //         // alert('Successfully Added Done.')
-        //         if (data.insertedId) {
-        //             Swal.fire({
-        //                 title: 'Success!',
-        //                 text: 'Painting added successfully.',
-        //                 icon: 'success',
-        //                 confirmButtonText: 'Close'
-        //             })
-        //         }
+        fetch('https://jute-wooden-crafts-store-server.vercel.app/crafts', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(juteWooden)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                // alert('Successfully Added Done.')
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Painting added successfully.',
+                        icon: 'success',
+                        confirmButtonText: 'Close'
+                    })
+                }
 
 
 
-        //     })
+            })
 
 
     }

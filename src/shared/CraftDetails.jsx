@@ -5,7 +5,6 @@ const CraftDetails = () => {
     console.log(craftDetail)
 
     const {
-        _id,
         image,
         item_name,
         subcategory_Name,
