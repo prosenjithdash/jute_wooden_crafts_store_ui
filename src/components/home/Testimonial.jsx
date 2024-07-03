@@ -40,7 +40,7 @@ const Testimonial = () => {
                                     <div className="flex items-center mt-4 space-x-4">
                                         <img src="https://i.ibb.co/Y34N8X3/handsome-bearded-guy-posing-against-white-wall-273609-20597.jpg" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
                                         <div>
-                                            <p className="text-lg font-semibold">Proshanto Paul</p>
+                                            <p className="text-lg font-semibold">Prosanto Paul</p>
                                             <p className="text-sm dark:text-gray-600">CTO of Company Zenson.</p>
                                         </div>
                                     </div>
