@@ -4,13 +4,13 @@ import useAuth from "../hooks/useAuth";
 const MyArtCraftList = () => {
 
     const { user } = useAuth() || {}
-    console.log(user)
+    console.log('User email :',user.email)
 
     useEffect(() => {
         fetch(`https://jute-wooden-crafts-store-server.vercel.app/myArtCrafts/${user?.email}`)
             .then(res => res.json())
             .then(data => {
-            console.log(data)
+            console.log('My added craft data:',data)
         })
     },[user])
     return (
@@ -62,7 +62,7 @@ const MyArtCraftList = () => {
         //     </table>
         // </div>
         <div>
-
+            <h2>Test</h2>
         </div>
     );
 };

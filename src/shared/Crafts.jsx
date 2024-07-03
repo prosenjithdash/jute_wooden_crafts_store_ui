@@ -3,7 +3,7 @@ import CraftCard from "./CraftCard";
 
 const Crafts = () => {
     const allCraft = useLoaderData();
-    console.log('All crafts:',allCraft)
+    // console.log('All crafts:',allCraft)
     return (
         <div className="max-w-[1280px] mx-auto">
             
