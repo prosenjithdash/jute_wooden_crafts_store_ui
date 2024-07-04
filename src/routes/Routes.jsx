@@ -10,6 +10,7 @@ import AllArtCraftItems from "../page/AllArtCraftItems";
 import CraftDetails from "../shared/CraftDetails";
 import AddCraftItem from "../page/AddCraftItem";
 import MyArtCraftList from "../page/MyArtCraftList";
+import CraftUpdate from "../page/CraftUpdate";
 
 const router = createBrowserRouter([
     {
@@ -46,6 +47,11 @@ const router = createBrowserRouter([
             {
                 path: '/myArtCraftList',
                 element: <MyArtCraftList />
+            },
+            {
+                path: '/craftUpdate/:id',
+                element: <CraftUpdate/>,
+                loader: ({ params }) => fetch(`https://jute-wooden-crafts-store-server.vercel.app/crafts/${params.id}`)
             },
 
             {

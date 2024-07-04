@@ -1,6 +1,8 @@
 
 
 
+import { RiDeleteBin5Fill } from "react-icons/ri";
+import { RxUpdate } from "react-icons/rx";
 import { Link } from "react-router-dom";
 
 const MyArtCraftCard = ({ craft }) => {
@@ -19,7 +21,7 @@ const MyArtCraftCard = ({ craft }) => {
     } = craft;
     return (
         <Link to={`/craftDetails/${_id}`}>
-            <div className="rounded-md shadow-md sm:w-96 dark:bg-gray-50 dark:text-gray-800">
+            <div className="rounded-md shadow-md sm:w-96 dark:bg-gray-50 dark:text-gray-800 ">
                 <div className="flex items-center justify-between p-3">
                     <div className="flex items-center space-x-2">
                         <img src={creator?.image} alt="" className="object-cover object-center w-8 h-8 rounded-full shadow-sm dark:bg-gray-500 dark:border-gray-300" />
@@ -38,17 +40,28 @@ const MyArtCraftCard = ({ craft }) => {
                 </div>
                 <img src={image} alt="" className="object-cover object-center w-full h-72 dark:bg-gray-500" />
 
-                <div className="space-y-2 p-[20px]">
+                <div className="space-y-2 p-[20px] ">
                     <a rel="noopener noreferrer" href="#" className="block">
                         <h3 className="text-xl font-semibold dark:text-violet-600">{item_name}</h3>
                     </a>
-                    <p className="leading-snug dark:text-gray-600 ">{shortdescription}</p>
+                    <p className="leading-snug dark:text-gray-600 flex-grow">{shortdescription}</p>
                 </div>
 
                 <div className=" px-[20px] pb-[10px] flex gap-[24px] items-center justify-between">
                     
                     <p className="leading-snug dark:text-gray-600 "> <span className="font-semibold">Price:</span> {price} /=</p>
                     <p className="leading-snug dark:text-gray-600 "><span className="font-semibold">Rating:</span> {rating}</p>
+                </div>
+
+                <div className=" px-[20px] py-[20px] flex gap-[24px] items-center justify-around ">
+
+                    <Link to={`/craftUpdate/${_id}`} >
+                        
+                        <RxUpdate  className="w-[30px] h-[30px] text-yellow-700" />
+                    </Link>
+
+                    <RiDeleteBin5Fill className="w-[30px] h-[30px] text-red-700" />
+
                 </div>
 
             </div>
