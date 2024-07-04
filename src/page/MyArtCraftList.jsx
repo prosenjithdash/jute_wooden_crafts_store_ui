@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import useAuth from "../hooks/useAuth";
+import MyArtCraftCard from "../components/MyArtCraftCard";
 
 const MyArtCraftList = () => {
 
     const { user } = useAuth() || {}
     console.log('User email :', user.email)
     
-    const [item, setItem] = useState([]);
+    const [item, setItem ] = useState([]);
     console.log('Current item:',item)
 
 
@@ -15,7 +16,7 @@ const MyArtCraftList = () => {
             .then(res => res.json())
             .then(data => {
                 console.log('My added craft data:', data)
-                setItem.data
+                setItem(data)
         })
     },[user])
     return (
@@ -66,18 +67,13 @@ const MyArtCraftList = () => {
                
         //     </table>
         // </div>
-        <div>
-            <h2>Test</h2>
-            <div>
-                {
-                    item?.map(c => (
-                        <div key={c._id}>
-                            <h2>{c.item_name}</h2>
-                        </div>
-                    ))
-                }
-            </div>
+       
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[24px] max-w-[1280px] mx-auto my-[30px]">
+            {
+                item?.map(craft => <MyArtCraftCard key={craft._id} craft={craft}></MyArtCraftCard>)
+            }
         </div>
+
     );
 };
 
