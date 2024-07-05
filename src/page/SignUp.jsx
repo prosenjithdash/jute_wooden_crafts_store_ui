@@ -79,7 +79,7 @@ const SignUp = () => {
                         className="space-y-6">
                         <div className="space-y-1 text-sm">
                             <label htmlFor="username" className="block text-gray-400 dark:text-gray-600">Name</label>
-                            <input type="text" name="name" id="username" placeholder="Name" required className="w-full px-4 py-3 rounded-md border-gray-300  bg-gray-50 text-gray-800 focus:border-violet-400 focus:dark:border-violet-600" />
+                            <input type="text" name="name" id="username" placeholder="Name" required className="w-full px-4 py-3 rounded-md border-gray-300  bg-gray-50 text-gray-800 focus:border-yellow-700  focus:dark:border-yellow-700 " />
                         </div>
                         <div>
                             <label htmlFor='image' className='block mb-2 text-sm'>
@@ -95,14 +95,14 @@ const SignUp = () => {
                         </div>
                         <div className="space-y-1 text-sm">
                             <label htmlFor="username" className="block text-gray-400 dark:text-gray-600">Email</label>
-                            <input type="email" name="email" id="username" placeholder="Email" required className="w-full px-4 py-3 rounded-md border-gray-300  bg-gray-50 text-gray-800 focus:border-violet-400 focus:dark:border-violet-600" />
+                            <input type="email" name="email" id="username" placeholder="Email" required className="w-full px-4 py-3 rounded-md border-gray-300  bg-gray-50 text-gray-800 focus:border-yellow-700 focus:dark:border-yellow-700 " />
                         </div>
                         <div className="space-y-1 text-sm">
                             <label htmlFor="password" className="block text-gray-400 dark:text-gray-600">Password</label>
-                            <input type="password" required name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-violet-400 focus:dark:border-violet-600" />
+                            <input type="password" required name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-yellow-700  focus:dark:border-yellow-700 " />
                           
                         </div>
-                        <button className="block w-full p-3 text-center rounded-sm text-gray-900 dark:text-gray-50 bg-violet-400 dark:bg-violet-600">Sign Up</button>
+                        <button className="block w-full p-3 text-center rounded-sm text-white bg-yellow-700 dark:bg-yellow-700 ">Sign Up</button>
                     </form>
                     <div className="flex items-center pt-4 space-x-1">
                         <div className="flex-1 h-px sm:w-16 bg-gray-700 dark:bg-gray-300"></div>
