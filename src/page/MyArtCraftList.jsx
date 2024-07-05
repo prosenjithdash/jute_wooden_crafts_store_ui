@@ -8,7 +8,10 @@ const MyArtCraftList = () => {
     console.log('User email :', user.email)
     
     const [item, setItem ] = useState([]);
-    console.log('Current item:',item)
+    console.log('Current item:', item)
+    
+    const [control, setControl] = useState(false);
+
 
 
     useEffect(() => {
@@ -18,7 +21,7 @@ const MyArtCraftList = () => {
                 console.log('My added craft data:', data)
                 setItem(data)
         })
-    },[user])
+    },[user, control])
     return (
         // <div className="overflow-x-auto max-w-[1280px] mx-auto">
         //     <table className="table">
@@ -70,7 +73,7 @@ const MyArtCraftList = () => {
        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-[24px] max-w-[1280px] mx-auto my-[30px]">
             {
-                item?.map(craft => <MyArtCraftCard key={craft._id} craft={craft}></MyArtCraftCard>)
+                item?.map(craft => <MyArtCraftCard key={craft._id} craft={craft} control={control} setControl={setControl}></MyArtCraftCard>)
             }
         </div>
 

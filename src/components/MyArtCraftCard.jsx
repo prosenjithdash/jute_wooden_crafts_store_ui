@@ -4,8 +4,9 @@
 import { RiDeleteBin5Fill } from "react-icons/ri";
 import { RxUpdate } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
-const MyArtCraftCard = ({ craft }) => {
+const MyArtCraftCard = ({ craft, control, setControl }) => {
     const {
         _id,
         image,
@@ -19,6 +20,45 @@ const MyArtCraftCard = ({ craft }) => {
         stockStatus,
         creator
     } = craft;
+    
+    const handleDelete = _id => {
+        console.log(_id)
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+
+                console.log('Confirm delete.')
+
+                fetch(`https://jute-wooden-crafts-store-server.vercel.app/crafts/${_id}`, {
+                    method: 'DELETE'
+
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data)
+                        if (data.deletedCount > 0) {
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your coffee has been deleted.",
+                                icon: "success"
+                            });
+                            setControl(!control)
+                            // const remaining = coffees.filter(cof => cof._id !== _id)
+                            // setCoffees(remaining)
+                        }
+                    })
+
+            }
+        });
+    }
+
     return (
         <Link to={`/craftDetails/${_id}`}>
             <div className="rounded-md shadow-md sm:w-96 dark:bg-gray-50 dark:text-gray-800 ">
@@ -60,7 +100,7 @@ const MyArtCraftCard = ({ craft }) => {
                         <RxUpdate  className="w-[30px] h-[30px] text-yellow-700" />
                     </Link>
 
-                    <RiDeleteBin5Fill className="w-[30px] h-[30px] text-red-700" />
+                    <RiDeleteBin5Fill onClick={() => handleDelete(_id)} className="w-[30px] h-[30px] text-red-700" />
 
                 </div>
 
